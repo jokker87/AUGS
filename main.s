@@ -1060,6 +1060,7 @@ copyBitmapToAllSprites:
 ; a0 - textfont pointer
 ; d1 - char index cleaned
 getCharloc:
+	clr.l d2
 	move.l 40(a0),d0
 	beq .noCharloc
 	move.l d0,a1
